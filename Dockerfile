@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER James Turnbull "james@example.com"
 ENV REFRESHED_AT 2016-06-01
 
-VOLUME [ "/var/jenkins_home" ]
+VOLUME [ "/var/jenkins_home/" ]
 
 RUN apt-get update
 RUN apt-get -y install ruby rake
